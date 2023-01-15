@@ -1,0 +1,35 @@
+.footer {
+    .box {
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+
+    &:nth-child(2) {
+        align-items: center;
+    }
+
+    &:nth-child(3) {
+        align-items: flex-end;
+    }
+}
+
+.footer__caption {
+    opacity: 0.7;
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer__item {
+}
+
+.footer__caption {
+}

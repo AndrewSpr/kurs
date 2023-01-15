@@ -1,0 +1,46 @@
+.explanation {
+    margin-top: 100px;
+    width: 80%;
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.explanation__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+
+    margin-top: 60px;
+}
+
+.explanation__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 250px;
+    height: 180px;
+}
+
+.explanation__icon {
+    width: 64px;
+    height: 64px;
+}
+
+.explanation__arrow {
+    width: 32px;
+    height: 20px;
+}
+
+.explanation__caption {
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 16px;
+    line-height: 22px;
+}

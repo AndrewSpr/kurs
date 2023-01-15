@@ -1,0 +1,414 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  min-width: 320px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:active {
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  border: inherit;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  height: inherit;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.button {
+  border-radius: 20px;
+  background: #346CD9;
+  width: 155px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subtitle {
+  opacity: 0.7;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.header .box {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__userbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+  width: 100%;
+}
+
+.footer .box {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__information {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+}
+.footer__information:nth-child(2) {
+  align-items: center;
+}
+.footer__information:nth-child(3) {
+  align-items: flex-end;
+}
+
+.footer__caption {
+  opacity: 0.7;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo .logo__title {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.logo .logo__caption {
+  display: block;
+  margin-left: 15px;
+  line-height: 15px;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+
+.poster {
+  width: 90%;
+}
+.poster .box {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.poster__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.poster__text {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.poster_picture {
+  display: block;
+  position: relative;
+  width: 1000px;
+}
+.poster_picture img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 100%;
+}
+
+.circle {
+  z-index: 1;
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  left: 445px;
+  top: -40px;
+  background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+  border-radius: 50%;
+}
+
+.latest-winners__winners-list {
+  margin-top: 25px;
+}
+.latest-winners__winners-list .winners-list__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.winners-list__item {
+  max-width: 270px;
+  height: 290px;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.winners-list__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.winners-list__item .winner-list__picture {
+  display: block;
+  height: 225px;
+}
+.winners-list__item img {
+  display: block;
+  max-width: 100%;
+}
+.winners-list__item .winners-list__addition {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  position: absolute;
+  background: #fff;
+}
+.winners-list__item .winners-list__addition .winners-list__winning {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+.latest-winners {
+  width: 70%;
+  margin-top: 100px;
+}
+.latest-winners .box {
+  flex-direction: column;
+}
+
+.title--align-left {
+  align-self: flex-start;
+}
+
+.explanation {
+  margin-top: 100px;
+  width: 80%;
+}
+.explanation .box {
+  flex-direction: column;
+  align-items: center;
+}
+
+.explanation__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  margin-top: 60px;
+}
+
+.explanation__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  height: 180px;
+}
+
+.explanation__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.explanation__arrow {
+  width: 32px;
+  height: 20px;
+}
+
+.explanation__caption {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.authentication__auth-form {
+  position: relative;
+  height: 180px;
+  margin-top: 30px;
+  width: 80%;
+}
+.authentication__auth-form .auth__box {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.auth-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form__control {
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.auth-form__error-msg {
+  position: absolute;
+  left: 5px;
+  top: 255px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.294);
+}
+
+.authentication {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.authentication .box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-check {
+  margin-top: 60px;
+}
+.quiz-check .box {
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-check .title {
+  margin-bottom: 20px;
+}
+.quiz-check .button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quiz-check__picture {
+  display: block;
+  position: relative;
+  width: 1000px;
+}
+.quiz-check__picture img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 100%;
+  border-radius: 30px;
+}
+
+.quiz-body .box {
+  flex-direction: column;
+  height: 100%;
+}
+
+.quiz-body__quiz {
+  height: 600px;
+}
+
+.quiz__box {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  flex-direction: column;
+}
+
+.quiz__item {
+  display: flex;
+  flex-direction: column;
+}
+.quiz__item textarea {
+  resize: none;
+}
+
+body {
+  color: #343434;
+}
+
+.header, .content-wrapper, .container, .content, .footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.header, footer {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex: none;
+}
+
+header {
+  height: 60px;
+}
+
+footer {
+  height: 170px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+  max-width: 1920px;
+}
+
+.container {
+  flex-wrap: nowrap;
+  flex: 1 0 auto;
+}
+
+.content {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  order: 0;
+  margin: 70px 0;
+}

@@ -1,0 +1,25 @@
+.quiz-body__quiz {
+    height: 600px;
+}
+
+.quiz__box {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+}
+
+.quiz__item {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        resize: none;
+    }
+}
+
+.quiz__label {
+}
+
+.quiz__input {
+}

@@ -1,0 +1,16 @@
+.header {
+    .box {
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header__userbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    width: 100%;
+}
+
+.userbar__item {
+}

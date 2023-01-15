@@ -1,0 +1,63 @@
+@import "nullstyle.scss";
+@import "global.scss";
+@import "header-inner.scss";
+@import "footer-inner.scss";
+@import "logo.scss";
+@import "hot-line.scss";
+@import "poster.scss";
+@import "latest-winners.scss";
+@import "explanation.scss";
+@import "authentication.scss";
+@import "quiz-check.scss";
+@import "quiz-body.scss";
+@import "quiz.scss";
+
+@mixin defBlockSettings {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex: none;
+}
+
+body { 
+    color: #343434;
+}
+
+.header, .content-wrapper, .container, .content, .footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.header, footer {
+    @include defBlockSettings;
+}
+
+header {
+    height: 60px;
+}
+
+footer { 
+    height: 170px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    flex-direction: column;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+}
+
+.container {
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+}
+
+.content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    order: 0;
+    margin: 70px 0;
+}

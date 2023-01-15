@@ -1,0 +1,31 @@
+.quiz-check {
+    margin-top: 60px;
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.quiz-check__picture {
+    display: block;
+    position: relative;
+    width: 1000px;
+
+    img {
+        position: relative;
+        z-index: 2;
+        display: block;
+        max-width: 100%;
+        border-radius: 30px;
+    }
+}

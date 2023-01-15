@@ -1,0 +1,14 @@
+@import "winners-list.scss";
+
+.latest-winners {
+    width: 70%;
+    margin-top: 100px;
+
+    .box {
+        flex-direction: column;
+    }
+}
+
+.title--align-left {
+    align-self: flex-start;
+}
